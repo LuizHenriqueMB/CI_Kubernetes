@@ -76,3 +76,7 @@ jobs:
      uses: ./.github/workflows/LoadTest.yml
      secrets: inherit
 
+  Deploy_EkS:
+     needs: docker
+     uses: ./.github/workflows/ECS.yml
+     secrets: inherit
